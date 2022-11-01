@@ -12,7 +12,7 @@ node {
 		}
 		stage('Results') {
 		   echo '拉取代码'
-		   deploy adapters: [tomcat8(credentialsId: '05c910e9-c1bf-4440-ad92-29def52021a7', path: '', url: 'http://192.168.100.106:8080/')], contextPath: '',war: 'target/*.war'
+		   deploy adapters: [tomcat8(credentialsId: '05c910e9-c1bf-4440-ad92-29def52021a7', path: '', url: 'http://192.168.10.12:8080/')], contextPath: '',war: 'target/*.war'
 
 		}
 	//}
